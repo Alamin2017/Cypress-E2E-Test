@@ -27,6 +27,9 @@ Cypress.Commands.add('logout',()=>{
     cy.wait(2000);
     cy.xpath("//a[normalize-space()='Logout']").click();
 })
+Cypress.Commands.add('ElementClick', (locator) => { 
+    cy.xpath(locator).click();
+});
 
 //
 // -- This is a child command --

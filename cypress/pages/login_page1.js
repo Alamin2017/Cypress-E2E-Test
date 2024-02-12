@@ -8,11 +8,11 @@ class loginPage{
         errorTxt : () => cy.get('span')
     }
     enterUsername(username) {
-        this.elements.usernameInput().clear();
+        // this.elements.usernameInput().clear();
         this.elements.usernameInput().type(username);
     }
     enterPassword(password) {
-        this.elements.passwordInput().clear();
+        // this.elements.passwordInput().clear();
         this.elements.passwordInput().type(password);
     }
     clickSubmit() {

@@ -10,8 +10,7 @@ class Login_Page{
         cy.xpath(this.password_field).type(password);
         cy.xpath(this.login_button).click();
     }
-    errMsgValidation()
-    {
+    errMsgValidation(){
         cy.get(this.err_msg).should('have.text',"Your email or password is incorrect!")
     }
 

@@ -12,7 +12,7 @@ class loginPage{
  
     get submit()
     {
-        return cy.get('input[name="submit"]');
+        return cy.xpath("//input[@name='submit']");
     }
  
    get successText()

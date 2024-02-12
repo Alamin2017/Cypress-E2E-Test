@@ -9,15 +9,15 @@ describe('POM Test', () => {
   });
   it('Test 1', () => {
     const loginObj = new loginPage();
-    loginObj.enterUsername('selenium@qa');
-    loginObj.enterPassword('qa@12345');
+    loginObj.enterUsername('selenium@qa',{force: true});
+    loginObj.enterPassword('qa@12345',{force: true});
     // loginObj.elements.successTxt().should('have.text','Login Successfully');
 
   });
   it('Test 2', () => {
     const loginObj = new loginPage();
-    loginObj.enterUsername('selenium');
-    loginObj.enterPassword('qa@123');
+    loginObj.enterUsername('selenium',{force: true});
+    loginObj.enterPassword('qa@123',{force: true});
     // loginObj.elements.errorTxt().should('contain','Enter your userName and password correct');
   });
 

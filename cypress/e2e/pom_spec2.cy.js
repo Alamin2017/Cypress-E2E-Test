@@ -9,8 +9,8 @@ describe('POM Test', () => {
    })
     it('Verify Login successful 1', () => {
       const loginObj = new loginPage();
-      loginObj.username.type('selenium@qa')
-      loginObj.password.type('qa@12345')
+      loginObj.username.type('selenium@qa',{force: true})
+      loginObj.password.type('qa@12345',{force: true})
     })
     it('Verify Login successful 2', () => {
       const loginObj = new loginPage();

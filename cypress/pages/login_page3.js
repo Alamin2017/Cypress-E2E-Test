@@ -13,6 +13,6 @@ class Login_Page{
     errMsgValidation(){
         cy.get(this.err_msg).should('have.text',"Your email or password is incorrect!")
     }
-
+    
 }
 export default Login_Page

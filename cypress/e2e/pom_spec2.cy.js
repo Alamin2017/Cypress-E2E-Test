@@ -1,3 +1,4 @@
+/// <reference types="Cypress"/>
 import loginPage from "../pages/login_page2";
 
 describe('POM Test', () => {

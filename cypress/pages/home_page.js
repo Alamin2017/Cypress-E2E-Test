@@ -1,6 +1,6 @@
 class Home {
     visit() {
-      cy.visit("/")
+      cy.visit("https://ecommerce-playground.lambdatest.io")
     }
    
     searchInput(text) {

@@ -1,9 +1,10 @@
 import { faker } from '@faker-js/faker';
-
+/// <reference types="Cypress"/>
 describe('Full Test Automation', () => {
 
     it('Add Product E2E Test:::', () => {
-        cy.viewport(1280, 720)
+
+        cy.viewport(1280, 720);
         cy.visit("https://automationexercise.com/");
         cy.xpath("//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1]").click();
         cy.xpath("//button[normalize-space()='Add to cart']").click();

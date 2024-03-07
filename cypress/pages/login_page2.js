@@ -1,30 +1,21 @@
 class loginPage{
 
-    get username()
-    {
+    get username(){
         return cy.get('input[name="userName"]');
     }
- 
-    get password()
-    {
+    get password(){
         return cy.get('input[name="password"]');
     }
- 
-    get submit()
-    {
+    get submit(){
         return cy.xpath("//input[@name='submit']");
     }
- 
-   get successText()
-    {
+   get successText(){
         return cy.get('h3');
     }
- 
-    get errorText()
-    {
+    get errorText(){
         return cy.get('span');
     }
- 
+    
  }
  
  export default loginPage;

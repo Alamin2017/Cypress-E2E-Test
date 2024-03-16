@@ -40,6 +40,7 @@ describe('Full Test Automation', () => {
         cy.xpath("//input[@placeholder='MM']").type("9");
         cy.xpath("//input[@placeholder='YYYY']").type("2025");
         cy.xpath("//button[@id='submit']").click();
+        cy.get(".nav > :nth-child(4) > a").click();
         
     });
 
